@@ -28,3 +28,11 @@ html,body{background:#1e2226;font-family:Arial,Helvetica,sans-serif}
 .strip{background:linear-gradient(#444d54,#2f363c);border:1px solid #14181b}
 .fader{accent-color:#ff5a2a}.pan{accent-color:#8dff3a}
 .h input.lb{width:54px;background:#0b0e10;color:#ff8a1f;border:1px solid #000;padding:6px;font:700 12px monospace;text-align:center;border-radius:2px}
+*{-webkit-touch-callout:none}
+.roll{position:relative}
+.nl{position:absolute;left:38px;top:0;pointer-events:none}
+.note{position:absolute;box-sizing:border-box;pointer-events:auto;touch-action:none;background:linear-gradient(#b6ff6a,#52b81c);border:1px solid #1d5a05;border-radius:3px;color:#062;font:700 10px monospace;padding:6px 3px;overflow:hidden}
+.note.sel{background:linear-gradient(#ffe36a,#e0a516);border-color:#fff;box-shadow:0 0 0 1px #fff;z-index:3}
+.note.sel::after{content:"";position:absolute;right:0;top:0;bottom:0;width:10px;background:rgba(0,0,0,.3)}
+.kl.kon{background:linear-gradient(90deg,#ffb25c,#ff7a1a)!important;color:#000}
+.rr.ron .cell{background:#46543a!important}

@@ -1,0 +1,30 @@
+html,body{background:#1e2226;font-family:Arial,Helvetica,sans-serif}
+#top{background:linear-gradient(#515a62,#363d43);border-bottom:1px solid #111;gap:5px}
+.b{background:linear-gradient(#6a747c,#454d54);border:1px solid #14181b;border-radius:3px;box-shadow:inset 0 1px #8b959c;color:#e9edf0;text-shadow:0 1px #000}
+.b.on{background:linear-gradient(#ffa24a,#e8650c);color:#1b0f00;box-shadow:inset 0 1px #ffd2a1;text-shadow:none}
+#play.on{background:linear-gradient(#8aff5a,#3fb81a);color:#052;text-shadow:none}
+#lcd,#bpm{background:#0b0e10;color:#ff8a1f;border:1px solid #000;box-shadow:inset 0 0 6px #000;text-shadow:0 0 6px #ff6a00;border-radius:2px}
+#ps{background:#0b0e10;color:#ff8a1f;border:1px solid #000;border-radius:2px}
+#meter{background:#0b0e10;border:1px solid #000}
+#main{background:#2a3036}
+#tabs{background:linear-gradient(#4a535a,#343b41)}
+#tabs button{color:#b9c1c7}
+#tabs button.on{color:#ffb25c;background:#2a3036;box-shadow:inset 0 2px #ff8a1f}
+.ch{background:#323940;border-bottom:1px solid #14181b}
+.ch.sel{background:#3b444c}
+.led{width:12px;height:12px;background:#1e3a14;border:1px solid #000;border-radius:2px;box-shadow:inset 0 1px #000}
+.led.on{background:#8dff3a;box-shadow:0 0 6px #8dff3a}
+.nm{background:linear-gradient(#5d6870,#454e55);border:1px solid #14181b;border-radius:3px;text-shadow:0 1px #000}
+.s{background:linear-gradient(#5a636a,#454c52);border:1px solid #14181b;border-radius:2px;box-shadow:inset 0 1px #7b858c}
+.s.g1{background:linear-gradient(#7a858c,#5f686f)}
+.s.on{background:linear-gradient(#ff7b4a,#d6301a);box-shadow:0 0 5px #ff5a2a,inset 0 1px #ffb59a}
+.s:nth-child(4n){margin-right:5px}
+.cur{outline:1px solid #fff}
+.cell{background:#2f363c}.bk .cell{background:#272d32}
+.cell.on{background:linear-gradient(#b6ff6a,#52b81c)}
+.kl{background:linear-gradient(90deg,#f4f4f4,#cfd2d4)}
+.bk .kl{background:linear-gradient(90deg,#222,#444)}
+.pc{border:1px solid #14181b}
+.strip{background:linear-gradient(#444d54,#2f363c);border:1px solid #14181b}
+.fader{accent-color:#ff5a2a}.pan{accent-color:#8dff3a}
+.h input.lb{width:54px;background:#0b0e10;color:#ff8a1f;border:1px solid #000;padding:6px;font:700 12px monospace;text-align:center;border-radius:2px}

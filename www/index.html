@@ -51,7 +51,7 @@ h4{margin:14px 8px 4px;color:#ff9a3c}
 </div><script>
 const $=s=>document.querySelector(s),main=$('#main');
 const el=(t,c,x,f)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null&&x!=='')e.textContent=x;if(f)e.onclick=f;return e};
-const ctx=new (window.AudioContext||window.webkitAudioContext)({latencyHint:'interactive',sampleRate:48000});
+const ctx=new (window.AudioContext||window.webkitAudioContext)({latencyHint:(localStorage.getItem('bfmode')||'balanced'),sampleRate:48000});
 const master=ctx.createGain();master.gain.value=.8;
 const comp=ctx.createDynamicsCompressor();master.connect(comp);comp.connect(ctx.destination);
 const an=ctx.createAnalyser();an.fftSize=256;comp.connect(an);const ad=new Uint8Array(256);
@@ -181,4 +181,4 @@ function render(){const y=main.scrollTop;main.innerHTML='';({rack:rRack,piano:rP
  document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.v===view));
  $('#ps').innerHTML=pats.map((_,i)=>'<option value="'+i+'"'+(i===pat?' selected':'')+'>Pattern '+(i+1)+'</option>').join('')+'<option value="n">+ New</option>';save()}
 render();
-</script><script src="fl.js"></script><script src="drums.js"></script><script src="perf.js"></script><script src="roll.js"></script></body></html>
+</script><script src="fl.js"></script><script src="drums.js"></script><script src="perf.js"></script><script src="roll.js"></script><script src="engine.js"></script></body></html>

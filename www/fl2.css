@@ -1,0 +1,22 @@
+.hint{padding:0 10px 6px;font-size:11px;color:var(--mu)}
+.note span{pointer-events:none}
+.grip{display:flex!important;align-items:center;justify-content:center;right:0!important;top:0!important;bottom:0!important;width:16px!important;border-radius:0 6px 6px 0!important;background:rgba(0,0,0,.3)!important;box-shadow:none!important}
+.grip::before{color:#fff!important;line-height:1!important;font-size:15px!important}
+.note.lift,.clip.lift{transform:scale(1.05);box-shadow:0 0 18px #fff;z-index:9}
+.rul2{position:sticky;top:0;z-index:7;background:#12151b;height:24px}
+.rul2 .kl{height:24px;background:#12151b!important;border:0}
+.rul2 .cell{height:24px;background:#12151b!important;color:var(--mu);font-size:10px;padding:5px 3px}
+.vl{position:relative;height:96px;margin-left:44px;width:576px;background:#0f1218;border-top:1px solid var(--ln)}
+.vb{position:absolute;bottom:0;width:26px;background:var(--c);border-radius:4px 4px 0 0;touch-action:none;opacity:.9}
+.plb{position:relative}
+.pl2{display:flex;width:max-content;height:54px}
+.pl2.rul{height:24px}
+.th{width:70px;flex:none;position:sticky;left:0;z-index:6;background:#171c23;border-right:1px solid var(--ln);border-bottom:1px solid var(--ln);display:flex;flex-direction:column;justify-content:center;padding:4px 6px;font-size:11px;font-weight:700}
+.mt{margin-top:4px;padding:3px;border-radius:5px;border:1px solid var(--ln);background:#232a34;color:var(--tx);font-size:10px}.mt.on{background:#e53935}
+.lane{background-image:linear-gradient(90deg,#232b35 1px,transparent 1px);background-size:56px 100%;background-color:#12151b;border-bottom:1px solid var(--ln);flex:none;height:100%}
+.rul .lane{display:flex;height:24px}
+.rn{flex:none;font-size:10px;color:var(--mu);border-left:1px solid var(--ln);padding:5px 4px;box-sizing:border-box}
+.cl{position:absolute;left:0;top:0;pointer-events:none}
+.clip{position:absolute;box-sizing:border-box;pointer-events:auto;touch-action:none;border-radius:6px;border:1px solid rgba(255,255,255,.4);color:#0c1208;font:800 11px system-ui;padding:6px 8px;overflow:hidden;box-shadow:inset 0 -8px 10px rgba(0,0,0,.2)}
+.clip.sel{outline:2px solid #fff}
+#ph{position:absolute;top:0;bottom:0;width:2px;background:#fff;opacity:.85;left:70px;pointer-events:none;z-index:8;display:none}

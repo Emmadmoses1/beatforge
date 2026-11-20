@@ -1,4 +1,4 @@
-const BUILD='v11',COL=['#ff8a1f','#4fc3f7','#9ccc65','#ba68c8','#ffd54f','#f06292','#4dd0e1'];
+const BUILD='v12',COL=['#ff8a1f','#4fc3f7','#9ccc65','#ba68c8','#ffd54f','#f06292','#4dd0e1'];
 (function(){
  const ic={rack:'<rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/>',
  piano:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M9 5v14M15 5v14"/>',

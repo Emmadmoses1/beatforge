@@ -1,0 +1,3 @@
+body:not(.glow) *{box-shadow:none!important;text-shadow:none!important;filter:none!important}
+.roll,.rr{contain:layout style}
+#main{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}

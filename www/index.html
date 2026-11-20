@@ -41,7 +41,7 @@ html,body{margin:0;height:100%;background:#2b3035;color:#dfe3e6;font:13px system
 h4{margin:14px 8px 4px;color:#ff9a3c}
 .bi{margin:4px 8px;padding:13px;background:#3a4147;border-radius:6px;font-weight:700}
 .msg{padding:20px;color:#9aa}
-</style><link rel="stylesheet" href="fl.css"><link rel="stylesheet" href="theme.css"></head><body><div id="app">
+</style><link rel="stylesheet" href="fl.css"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="speed.css"></head><body><div id="app">
 <div id="top">
 <button class="b" id="play">▶</button><button class="b" id="stop">■</button><button class="b" id="mode">PAT</button>
 <div id="lcd">1:1</div><input id="bpm" type="number" value="120" min="60" max="220">
@@ -51,7 +51,7 @@ h4{margin:14px 8px 4px;color:#ff9a3c}
 </div><script>
 const $=s=>document.querySelector(s),main=$('#main');
 const el=(t,c,x,f)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null&&x!=='')e.textContent=x;if(f)e.onclick=f;return e};
-const ctx=new (window.AudioContext||window.webkitAudioContext)({latencyHint:(localStorage.getItem('bfmode')||'balanced'),sampleRate:48000});
+const ctx=new (window.AudioContext||window.webkitAudioContext)({latencyHint:(localStorage.getItem('bfmode')||'interactive'),sampleRate:48000});
 const master=ctx.createGain();master.gain.value=.8;
 const comp=ctx.createDynamicsCompressor();master.connect(comp);comp.connect(ctx.destination);
 const an=ctx.createAnalyser();an.fftSize=256;comp.connect(an);const ad=new Uint8Array(256);
@@ -181,4 +181,4 @@ function render(){const y=main.scrollTop;main.innerHTML='';({rack:rRack,piano:rP
  document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.v===view));
  $('#ps').innerHTML=pats.map((_,i)=>'<option value="'+i+'"'+(i===pat?' selected':'')+'>Pattern '+(i+1)+'</option>').join('')+'<option value="n">+ New</option>';save()}
 render();
-</script><script src="fl.js"></script><script src="drums.js"></script><script src="perf.js"></script><script src="roll.js"></script><script src="engine.js"></script><script src="theme.js"></script><script src="loud.js"></script></body></html>
+</script><script src="fl.js"></script><script src="drums.js"></script><script src="perf.js"></script><script src="roll.js"></script><script src="engine.js"></script><script src="theme.js"></script><script src="loud.js"></script><script src="speed.js"></script></body></html>

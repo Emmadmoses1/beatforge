@@ -19,7 +19,7 @@ trig=function(c,n,t){
 /* audio mode setting */
 const _rb=rBrow;
 rBrow=function(m){_rb(m);m.append(el('h4',null,'Audio'));
- const md=localStorage.getItem('bfmode')||'balanced';
+ const md=localStorage.getItem('bfmode')||'interactive';
  [['interactive','Fast (lowest delay)'],['balanced','Balanced (recommended)'],['playback','Safe (never crackles)']]
  .forEach(([v,t])=>m.append(el('div','bi',(md===v?'✔ ':'')+t,()=>{localStorage.setItem('bfmode',v);location.reload()})))};
 render();
